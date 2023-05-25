@@ -1,0 +1,1 @@
+import{e as s,u as a,i as e,a as r,b as t,c as n,f as i,g as o,h as c,j as u,k as f}from"./echarts-35075750.js";function g(a,e){let r=s.getInstanceByDom(a);return r||(r=s.init(a,e,{renderer:"svg"})),r}a([e,r,t,n,i,o,c,u,f]);export{g as u};
