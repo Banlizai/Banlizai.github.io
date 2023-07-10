@@ -1,0 +1,1 @@
+import{g as a,p as s,A as t,G as e}from"./index-0ca45986.js";const i=async s=>await a({url:"/system/notice/list",data:s}),c=async a=>await s({url:"/system/notice",data:a}),n=async a=>await t({url:"/system/notice",data:a}),y=async s=>await a({url:`/system/notice/${s}`}),o=async a=>await e({url:`/system/notice/${a}`});export{i as a,o as b,c,n as d,y as e};

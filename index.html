@@ -1,45 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
-    <meta name="format-detection" content="telephone=no, email=no, date=no, address=no" />
-    <title>码上通</title>
-    <script type="module" crossorigin src="/assets/index-1f6600ba.js"></script>
-    <link rel="stylesheet" href="/assets/index-b817ccda.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIM</title>
+    <link rel="stylesheet" href="/static/css/loading.css" />
+    <script type="module" crossorigin src="/assets/index-0ca45986.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/@vue-2b41ce19.js">
+    <link rel="modulepreload" crossorigin href="/assets/b-tween-5055d79e.js">
+    <link rel="modulepreload" crossorigin href="/assets/b-validate-457088db.js">
+    <link rel="modulepreload" crossorigin href="/assets/resize-observer-polyfill-ad543aa3.js">
+    <link rel="modulepreload" crossorigin href="/assets/compute-scroll-into-view-2962e95c.js">
+    <link rel="modulepreload" crossorigin href="/assets/scroll-into-view-if-needed-59a60a09.js">
+    <link rel="modulepreload" crossorigin href="/assets/number-precision-d9b928a1.js">
+    <link rel="modulepreload" crossorigin href="/assets/ids-ef071351.js">
+    <link rel="modulepreload" crossorigin href="/assets/lodash-es-1e3e3aa2.js">
+    <link rel="modulepreload" crossorigin href="/assets/preact-5fc9b0bf.js">
+    <link rel="modulepreload" crossorigin href="/assets/@logicflow-85f8458e.js">
+    <link rel="modulepreload" crossorigin href="/assets/dayjs-094145ee.js">
+    <link rel="modulepreload" crossorigin href="/assets/@arco-design-8dabd30f.js">
+    <link rel="modulepreload" crossorigin href="/assets/pinia-b3c1485e.js">
+    <link rel="modulepreload" crossorigin href="/assets/axios-6371c10e.js">
+    <link rel="modulepreload" crossorigin href="/assets/has-symbols-456daba2.js">
+    <link rel="modulepreload" crossorigin href="/assets/has-proto-4a87f140.js">
+    <link rel="modulepreload" crossorigin href="/assets/function-bind-72d06d3b.js">
+    <link rel="modulepreload" crossorigin href="/assets/has-885c3436.js">
+    <link rel="modulepreload" crossorigin href="/assets/get-intrinsic-bac01933.js">
+    <link rel="modulepreload" crossorigin href="/assets/call-bind-fae29077.js">
+    <link rel="modulepreload" crossorigin href="/assets/object-inspect-0eda087e.js">
+    <link rel="modulepreload" crossorigin href="/assets/side-channel-01aeb4d9.js">
+    <link rel="modulepreload" crossorigin href="/assets/qs-f981fe00.js">
+    <link rel="modulepreload" crossorigin href="/assets/path-browserify-8c7c24dd.js">
+    <link rel="modulepreload" crossorigin href="/assets/vue-router-70e2faff.js">
+    <link rel="modulepreload" crossorigin href="/assets/@vueuse-ca9a384d.js">
+    <link rel="modulepreload" crossorigin href="/assets/tiny-emitter-35dc7566.js">
+    <link rel="modulepreload" crossorigin href="/assets/tslib-a4e99503.js">
+    <link rel="modulepreload" crossorigin href="/assets/zrender-2d3b2bba.js">
+    <link rel="modulepreload" crossorigin href="/assets/echarts-24943dbb.js">
+    <link rel="modulepreload" crossorigin href="/assets/delegate-ef66b241.js">
+    <link rel="modulepreload" crossorigin href="/assets/downloadjs-91c0ea73.js">
+    <link rel="modulepreload" crossorigin href="/assets/xgplayer-700bd6a3.js">
+    <link rel="modulepreload" crossorigin href="/assets/quill-ecb3881d.js">
+    <link rel="modulepreload" crossorigin href="/assets/sortablejs-2f5483e3.js">
+    <link rel="stylesheet" href="/assets/@logicflow-4fbf093d.css">
+    <link rel="stylesheet" href="/assets/@arco-design-766c8d5e.css">
+    <link rel="stylesheet" href="/assets/quill-8e59e50e.css">
+    <link rel="stylesheet" href="/assets/index-29e4a384.css">
   </head>
-
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="first-loading-wrp">
+        <div class="loading-wrp">
+          <i class="splash__item" style="--i: 0.1s"></i>
+          <i class="splash__item" style="--i: 0.2s"></i>
+          <i class="splash__item" style="--i: 0.3s"></i>
+          <i class="splash__item" style="--i: 0.4s"></i>
+          <i class="splash__item" style="--i: 0.5s"></i>
+          <i class="splash__item" style="--i: 0.6s"></i>
+          <i class="splash__item" style="--i: 0.7s"></i>
+          <i class="splash__item" style="--i: 0.8s"></i>
+        </div>
+        <h1>S I M</h1>
+      </div>
+    </div>
     
-    <script>
-      window.onload = function () {
-        document.addEventListener('touchstart', function (event) {
-          if (event.touches.length > 1) {
-            event.preventDefault();
-          }
-        });
-
-        var lastTouchEnd = 0;
-
-        document.addEventListener(
-          'touchend',
-          function (event) {
-            var now = new Date().getTime();
-            if (now - lastTouchEnd <= 300) {
-              event.preventDefault();
-            }
-
-            lastTouchEnd = now;
-          },
-          false,
-        );
-
-        document.addEventListener('gesturestart', function (event) {
-          event.preventDefault();
-        });
-      };
-    </script>
   </body>
 </html>

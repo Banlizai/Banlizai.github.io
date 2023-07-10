@@ -1,1 +1,0 @@
-import{D as t}from"./index-1f6600ba.js";const e=t({id:"app-nav",state:()=>({title:localStorage.getItem("navTitle")||""}),getters:{getNavTitle(){return this.title||localStorage.getItem("navTitle")||""}},actions:{setNavTitle(t){this.title=t||"",localStorage.setItem("navTitle",this.title)}}});export{e as u};
